@@ -1,0 +1,16 @@
+<html>
+<head>
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <a href='/'>Cancel</a>
+<h1 id='welcome'> Sign in to Twitter </h1>
+    <form method='post' action='/login'>
+      <% if(incorrect) { %> <p>user or password incorrect</p><% } %>
+      <input type='text' name='username' placeholder='User' required/> <br>
+      <input type='password' name='password' placeholder='Password' required /> <br>
+      <input type='submit' value='Log in' class='button'/>
+    </form>
+<a href='/register'><button> Sign up on Twitter</button></a>
+</home>
+</html>
