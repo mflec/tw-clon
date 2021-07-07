@@ -1,11 +1,11 @@
 {
-  "name": "04-authentication-demo-session",
+  "name": "twclon",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "nodemon server.js"
   },
-  "author": "",
+  "author": "mflec",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
