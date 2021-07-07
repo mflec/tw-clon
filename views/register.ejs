@@ -3,13 +3,15 @@
 <link href="./styles/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <a href='/'>Cancel</a>
+  <a href='/' class='href'>Cancel</a> <br>
 <h1>Creat your account</h1>
+<img src='/styles/logo.png'>
     <form method='post' action='/register'>
       <input name='name' placeholder='Name' required /> <br>
-      <% if(exist) { %> <p>this user already exists</p><% } %>
+      <% if(exist) { %> <p style='color:red'>this user already exists</p><% } %>
       <input type='text' name='username' placeholder='User' required /> <br>
       <input type='password' name='password' placeholder='Password' required /> <br>
+      <input type='mail' name='mail' placeholder='mail' required /> <br>
       <label for="Date of Birth">
       Enter the Date:  <br>
       <input type="date" name="date"/>

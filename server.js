@@ -128,7 +128,7 @@ app.post('/login', redirectHome, (req, res) => {
       }
     }
   
-    res.redirect('/login', {incorrect: true} )
+    res.render('login', {incorrect: true} )
 });
 
 
