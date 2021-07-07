@@ -5,7 +5,7 @@ body {
     justify-content: center;
     border-color: transparent;
     border-style: solid;
-   border-width: 80px 200px 0px;
+   border-width: 2rem 8rem 2rem;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 400;
@@ -35,14 +35,15 @@ input {
 }
 
 .button, button {
-background-color: rgb(85, 175, 235);
-display: block;
+  background-color: rgb(85, 175, 235);
+  display: block;
   width: 30%;
   padding: 0.75rem;
   color: #ffffff;
   border-radius: 15px;
   cursor: pointer;
-  margin-left: 30%;
+  margin-left: 23rem;
+  
 }
 
  
@@ -54,7 +55,7 @@ display: block;
   padding: 0.75rem;
   border-radius: 15px;
   cursor: pointer;
-  margin-left: 30%;
+  margin-left: 23rem;
 }
 
 
@@ -106,7 +107,7 @@ border-width: 1px;
  
 #verif {
     height: 1rem;
-}
+};
 
 #user{
     background-color: transparent;
@@ -131,17 +132,14 @@ border-width: 1px;
   width: 5rem;
   color: #ffffff;
   border-radius: 2px;
-  border: 0px, 0px, 0px;
+  border: 0px, 0px, 50px;
+
 }
+
 .href:hover{
     background-color: #ffffff;
     width: 5rem;
     color:  rgb(85, 175, 235);;
     border-radius: 2px;
     border-left: 0em solid;
-}
-
-.title{
-    font-size: 4rem;
-    font-family: Courier , monospace;
-}
+};
