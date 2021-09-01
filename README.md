@@ -1,4 +1,4 @@
-# El proyecto se realizo solo utilizando Nodejs
+# Imitacion de twitter utilizando Nodejs
 
 Registro de usuarios:
 - Campos: Nombre completo, Correo electrónico, Nombre de usuario y
