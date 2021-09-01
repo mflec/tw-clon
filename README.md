@@ -1,4 +1,4 @@
-# El proyecto se puede realizo utilizando Nodejs
+# El proyecto se realizo solo utilizando Nodejs
 
 Registro de usuarios:
 - Campos: Nombre completo, Correo electrónico, Nombre de usuario y
