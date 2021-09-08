@@ -47,7 +47,7 @@ app.use((req, res, next) => {
 
 app.get('/', getindex);
 
-app.get('/tweets', gettweets)
+app.get('/user', redirectLogin , gettweets);
 
 app.get('/home', redirectLogin, gethome);
 

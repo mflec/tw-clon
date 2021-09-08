@@ -7,7 +7,7 @@ const postregister = async (req, res) => {
         console.log('pasa2')
         if (!exists) {
             const user = {
-                id: username,
+                id: username.toUpperCase(),
                 username,
                 name,
                 password

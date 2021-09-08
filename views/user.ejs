@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <a href='/logout' class='href'> Log out</a>
+    <a href='/' class='href'> Back</a>
+    <br>
+    <br>
+    <div class='header'>
+        <h2>
+            <%= username %> tweets <img src='/styles/logo.png' class='logo'>
+        </h2>
+    </div><br>
+    <div>
+        <% for (var i=data.length-1; i>0; i--) { %>
+            <blockquote class='tweets'>
+                <h5 id="user"> 💙 <%= '@' + data[i].username %>
+                </h5>
+                <p>
+                    <%= data[i].content %>
+                </p>
+            </blockquote> <br>
+            <% } %>
+</body>
+</div>
+
+</html>
