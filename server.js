@@ -2,7 +2,7 @@ const express = require('express');
 const cookieparser = require('cookie-parser');
 const session = require('express-session');
 const morgan = require('morgan');
-const { Tweet } = require('./db');
+const { Tweet, conn } = require('./db');
 const { redirectLogin } = require('./middlewares/redirectLogin');
 const { redirectHome } = require('./middlewares/redirectHome');
 const { postlogin, getlogin } = require('./controllers/login');
@@ -94,10 +94,15 @@ app.get('/clear', (req, res) => {
 
 //------------------------------------------------------------------
 
-app.listen(3001, (err) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log('Listening on port ' + 3001);
-  }
+conn.sync({force: false}).then(() => {
+  app.listen(3001, (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log('Listening on port ' + 3001);
+    }
+  });
 });
+
+
+
